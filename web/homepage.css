@@ -1,0 +1,29 @@
+body{
+    background-image: url("https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fresize%3D2000%252C2000%252Cshrink%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-08%252F0d85ab90-c800-11e9-abbb-767e61f0120a%26client%3Da1acac3e1b3290917d92%26signature%3D14bca0b4aba5c42d5f49114d69b8db535fea92c3&client=amp-blogside-v2&signature=cf0357a9201c10d0df953214f72576950b97254b");
+    text-align: center;
+}
+h1{
+    color: aqua;
+}
+
+/* unvisited link */
+  a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: red;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+    background-color: yellow;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    background-color: aqua;
+  }
