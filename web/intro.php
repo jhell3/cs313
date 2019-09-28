@@ -15,7 +15,7 @@
             echo "my favorite pokemon is definitly Mewtwo. he is legit.";
         ?>
         <p id="para">I would consider him one of the strongest pokemon. I think it is time that I do something dynamic though. </p>
-        <button id="button">Click me</button>    
+        <button id="button" onclick="fades()">Click me</button>    
     </div>
         
         
@@ -24,7 +24,6 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
             function fades(){
-            $("#para").fadeToggle();
             $("#para").fadeToggle();
             }
         </script>
