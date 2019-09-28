@@ -10,10 +10,11 @@
     </head>
     <body>
         <h1>Pokemon</h1>
+        <div>
         <?php
             echo "my favorite pokemon is definitly Mewtwo. he is freaking legit.";
         ?>
-
+        </div>
         <img src="https://ae01.alicdn.com/kf/HTB1wZx9BOOYBuNjSsD4q6zSkFXaa/Full-Square-Diamond-5D-DIY-Diamond-Painting-Mewtwo-Pokemon-Embroidery-Cross-Stitch-Rhinestone-Mosaic-Painting-Home.jpg_640x640.jpg" alt="mewtwo">
 
     </body>
