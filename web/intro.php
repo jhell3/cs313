@@ -13,7 +13,7 @@
         <h1>Pokemon</h1>
         <div>
         <?php
-            echo "my favorite pokemon is definitly Mewtwo. he is legit.";
+            echo "My favorite pokemon is definitly Mewtwo. He is legit.";
         ?>
         <p id="para">I would consider him one of the strongest pokemon. I think it is time that I do something dynamic though. </p>
         <button id="button" onclick="fades()">Click me</button>    
