@@ -17,6 +17,8 @@
         ?>
         <p id="para">I would consider him one of the strongest pokemon. I think it is time that I do something dynamic though. </p>
         <button id="button" onclick="fades()">Click me</button>    
+        <button id="button1" onclick="pcolor()">Click me</button>  
+        <button id="button2" onclick="bgcolor()">Click me</button>  
     </div>
         
         
@@ -25,8 +27,18 @@
         
         <script>
             function fades(){
-            $("#para").fadeToggle();
+                $("#para").fadeToggle();
             }
+            function bgcolor(){
+                $("#button2").css.("backgroundColor", purple)
+                $("#button2").fadeOut();
+            }
+            
+            function pcolor(){
+                $("#para").css.("textColor", yellow)
+                $("#button1").fadeOut();
+            }
+            
         </script>
     </body>
 </html>
