@@ -29,7 +29,7 @@
             }
            
             function pcolor(){
-                $("#para").css.("textColor", yellow);
+                $("#para").css("textColor", yellow);
                 $("#button1").fadeOut();
             }
              
