@@ -34,7 +34,7 @@
             }
              
             function bgcolor(){
-                $("#button2").css.("backgroundColor", purple);
+                $("#button2").css("backgroundColor", purple);
                 $("#button2").fadeOut();
             }
         </script>
