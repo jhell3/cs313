@@ -29,12 +29,12 @@
             }
            
             function pcolor(){
-                $("#para").css("textColor", yellow);
+                $("#para").css("textColor", "yellow");
                 $("#button1").fadeOut();
             }
              
             function bgcolor(){
-                $("#button2").css("backgroundColor", purple);
+                $("#button2").css("backgroundColor", "purple");
                 $("#button2").fadeOut();
             }
         </script>
