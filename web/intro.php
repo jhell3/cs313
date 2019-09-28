@@ -14,15 +14,18 @@
         <?php
             echo "my favorite pokemon is definitly Mewtwo. he is legit.";
         ?>
-        </div>
         <p id="para">I would consider him one of the strongest pokemon. I think it is time that I do something dynamic though. </p>
-        <button id="button">Click me</button>
+        <button id="button">Click me</button>    
+    </div>
+        
+        
+        
         <img src="https://ae01.alicdn.com/kf/HTB1wZx9BOOYBuNjSsD4q6zSkFXaa/Full-Square-Diamond-5D-DIY-Diamond-Painting-Mewtwo-Pokemon-Embroidery-Cross-Stitch-Rhinestone-Mosaic-Painting-Home.jpg_640x640.jpg" alt="mewtwo">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
             function fades(){
-            $("#button").fadeToggle();
-            $("#button").fadeToggle();
+            $("#para").fadeToggle();
+            $("#para").fadeToggle();
             }
         </script>
     </body>
