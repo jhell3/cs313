@@ -18,12 +18,9 @@
                       "wd" => "Web Design" ,
                       "cit"=>"Computer Information Technology",
                       "ce"=>"Computer Engineering");
-      // <input type="radio" checked name="major" value="cs">Computer Science</input>
-      // <input type="radio" name="major" value="wd">Web Design and Development</input>
-      // <input type="radio" name="major" value="cit">Computer information Technology</input>
-      // <input type="radio" name="major" value="ce">Computer Engineering</input>
-      foreach($major as $x => $x_value) {
-        echo "<input type=\"radio\" name=\"major\" value=\"" . $x . "\">" . $x_value . "</input>";
+
+      foreach($majors as $x => $x_value) {
+        echo "<input type=\"radio\" name=\"major\" value=\"" . $x . "\"> " . $x_value . "</input>";
         echo "<br>";
       }
   ?>
