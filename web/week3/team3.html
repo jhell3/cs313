@@ -7,11 +7,11 @@
   <body method="post" action="team3.php" >
 <h1>Student Info:</h1>
     <form action="team3.php" method="post">
-      <input type="text" id="name" value="" placeholder="Name">
+      <input type="text" name="name" id="name" value="" placeholder="Name">
       <br>
-      <input type="text" id="email" value="" placeholder="example@email.com">
+      <input type="text" name="email" id="email" value="" placeholder="example@email.com">
       <br>
-
+      <h3>Choose major</h3>
       <input type="radio" name="major" value="cs">Computer Science</input>
       <input type="radio" name="major" value="wd">Web Design and Development</input>
       <input type="radio" name="major" value="cit">Computer information Technology
@@ -19,7 +19,16 @@
 </input>
       <input type="radio" name="major" value="ce">Computer Engineering</input>
 
+      <br>
       <input type="text" name="comments" placeholder="Comments">Add a comment!</input>
+
+      <input type="checkbox" name="continent1" value="North America"><br>
+      <input type="checkbox" name="continent2" value="South America"><br>
+      <input type="checkbox" name="continent3" value="Europe"><br>
+      <input type="checkbox" name="continent4" value="Asia"><br>
+      <input type="checkbox" name="continent5" value="Australia"><br>
+      <input type="checkbox" name="continent6" value="Africa"><br>
+      <input type="checkbox" name="continent7" value="Antartica"><br>
     </form>
 
   </body>
