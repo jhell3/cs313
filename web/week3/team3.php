@@ -16,7 +16,7 @@ $continent = $_POST["continent"];
 if(empty($continent)) {
   $str .= "<p>Welcome to Earth. You haven't visited anywhere.</p>";
 }
-else {
+if(isset($_POST['continent'])) {
    $str .= "<ul>\n";
    foreach ($continent as $value) {
       $str .= "<li>" . $value . "</li>\n";
