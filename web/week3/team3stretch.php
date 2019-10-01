@@ -6,18 +6,27 @@
   </head>
   <body method="post" action="team3.php" >
 <h1>Student Info:</h1>
-<?php
+
     <form action="team3.php" method="post">
       <input type="text" name="name" id="name" value="Joe" placeholder="Name">
       <br>
       <input type="text" name="email" id="email" value="hello@email.com" placeholder="example@email.com">
       <br>
       <h3>Choose major</h3>
-      <input type="radio" checked name="major" value="cs">Computer Science</input>
-      <input type="radio" name="major" value="wd">Web Design and Development</input>
-      <input type="radio" name="major" value="cit">Computer information Technology</input>
-      <input type="radio" name="major" value="ce">Computer Engineering</input>
-
+  <?php
+      $majors = array("cs"=>"Computer Science",
+                      "wd" => "Web Design" ,
+                      "cit"=>"Computer Information Technology",
+                      "ce"=>"Computer Engineering");
+      // <input type="radio" checked name="major" value="cs">Computer Science</input>
+      // <input type="radio" name="major" value="wd">Web Design and Development</input>
+      // <input type="radio" name="major" value="cit">Computer information Technology</input>
+      // <input type="radio" name="major" value="ce">Computer Engineering</input>
+      foreach($major as $x => $x_value) {
+        echo "<input type=\"radio\" name=\"major\" value=\"" . $x . "\">" . $x_value . "</input>";
+        echo "<br>";
+      }
+  ?>
       <br>
       <input type="text" name="comments" value="some comments" placeholder="Comments">Add a comment!</input>
       <br>
@@ -30,6 +39,7 @@
       <input type="checkbox" name="continent[]" value="Antartica">Antartica<br>
 
       <input type="submit" value="submit">
+
     </form>
 
   </body>

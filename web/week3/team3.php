@@ -12,8 +12,6 @@ $str = "<h1>Hello " . $_POST["name"] . "!</h1>\n" .
       "<p> You said:<br>" . $_POST["comments"] . "</p>" .
       "<p> You have visited:<br>";
 
-echo $str;
-
 $continent = $_POST["continent"];
 if(empty($continent)) {
   $str .= "<p>Welcome to Earth. You haven't visited anywhere.</p>";
