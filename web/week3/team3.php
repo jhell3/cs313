@@ -19,7 +19,7 @@ if(empty($continent)) {
 else {
    $str .= "<ul>\n";
    foreach ($continent as $value) {
-      $str .= "<li>" . $value . "</li>";
+      $str .= "<li>" . $value . "</li>\n";
    }
    $str .= "</ul>";
 }
