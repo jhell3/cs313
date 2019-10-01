@@ -12,14 +12,21 @@ $str = "<h1>Hello " . $_POST["name"] . "!</h1>\n" .
       "<p> You said:<br>" . $_POST["comments"] . "</p>" .
       "<p> You have visited:<br>";
 
+$cont = array("na"=>"North America",
+              "sa"=>"South America",
+              "eu"=>"Europe",
+              "as"=>"Asia",
+              "au"=>"Australia",
+              "af"=>"Africa",
+              "an"=>"Antartica",);
 $continent = $_POST["continent"];
 if(empty($continent)) {
   $str .= "<p>Welcome to Earth. You haven't visited anywhere.</p>";
 }
 else if(isset($_POST['continent'])) {
    $str .= "<ul>\n";
-   foreach ($continent as $value) {
-      $str .= "<li>" . $value . "</li>\n";
+   foreach ($continent as $key) {
+      $str .= "<li>" . $cont[$key] . "</li>\n";
    }
    $str .= "</ul>";
 }

@@ -18,7 +18,6 @@
                       "wd" => "Web Design" ,
                       "cit"=>"Computer Information Technology",
                       "ce"=>"Computer Engineering");
-
       foreach($majors as $x => $x_value) {
         echo "<input type=\"radio\" name=\"major\" value=\"" . $x . "\"> " . $x_value . "</input>";
         echo "<br>";
@@ -27,13 +26,13 @@
       <br>
       <input type="text" name="comments" value="some comments" placeholder="Comments">Add a comment!</input>
       <br>
-      <input type="checkbox" checked name="continent[]" value="North America">North America<br>
-      <input type="checkbox" name="continent[]" value="South America">South America<br>
-      <input type="checkbox" name="continent[]" value="Europe">Europe<br>
-      <input type="checkbox" name="continent[]" value="Asia">Asia<br>
-      <input type="checkbox" name="continent[]" value="Australia">Australia<br>
-      <input type="checkbox" name="continent[]" value="Africa">Africa<br>
-      <input type="checkbox" name="continent[]" value="Antartica">Antartica<br>
+      <input type="checkbox" checked name="continent[]" value="na">North America<br>
+      <input type="checkbox" name="continent[]" value="sa">South America<br>
+      <input type="checkbox" name="continent[]" value="eu">Europe<br>
+      <input type="checkbox" name="continent[]" value="as">Asia<br>
+      <input type="checkbox" name="continent[]" value="au">Australia<br>
+      <input type="checkbox" name="continent[]" value="af">Africa<br>
+      <input type="checkbox" name="continent[]" value="ant">Antartica<br>
 
       <input type="submit" value="submit">
 
