@@ -6,15 +6,15 @@
   </head>
   <body>
 <?php
-string $str = "<h1>Hello " . $_POST["name"] . "!</h1>\n" .
+$str = "<h1>Hello " . $_POST["name"] . "!</h1>\n" .
       "<h2>Your email is <a href=\"mailto:" . $_POST["email"] . "\">" . $_POST["email"] ."</a></h2>\n" .
       "<p>Your major is " . $_POST["major"] . ".</p>" .
       "<p> You said:<br>" . $_POST["comments"] . "</p>" .
       "<p> You have visited:<br>";
 
-$continent = $_POST['continent'];
+$continent = $_POST['continent[]'];
 if(empty($continent)) {
-  $str += "<p>Welcome to Earth. You haven't visited anywhere.</p>"
+  $str += "<p>Welcome to Earth. You haven't visited anywhere.</p>";
 }
 else {
    $str += "<ul>\n";
