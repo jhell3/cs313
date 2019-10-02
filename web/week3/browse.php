@@ -27,11 +27,13 @@
             </tr>
         <?php
             foreach($items as $x => $x_value){
+                $i = 0;
                 echo "<tr> 
                         <td>" . $x . "</td> 
                         <td>" . $x_value . "</td> 
-                        <td><button id= \"b[$x]\"> Add to Cart </button></td>
+                        <td><button id= \"b[$i]\"> Add to Cart </button></td>
                     </tr>";
+                $i += 1;
             }
          ?>
 
