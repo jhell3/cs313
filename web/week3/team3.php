@@ -18,7 +18,7 @@ $cont = array("na"=>"North America",
               "as"=>"Asia",
               "au"=>"Australia",
               "af"=>"Africa",
-              "an"=>"Antartica",);
+              "ant"=>"Antartica",);
 $continent = $_POST["continent"];
 if(empty($continent)) {
   $str .= "<p>Welcome to Earth. You haven't visited anywhere.</p>";
