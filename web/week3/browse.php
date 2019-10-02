@@ -30,7 +30,7 @@
                 echo "<tr> 
                         <td>" . $x . "</td> 
                         <td>" . $x_value . "</td> 
-                        <td><button> Add to Cart </button></td>
+                        <td><button id= \"b[$x]\"> Add to Cart </button></td>
                     </tr>";
             }
          ?>

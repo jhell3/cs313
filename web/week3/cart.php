@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        
-        
+    <h1><a href="browse.php">I Hate My Friend.</a></h1>
+
+
         
         <script src="" async defer></script>
     </body>
