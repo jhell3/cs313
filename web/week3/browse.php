@@ -44,7 +44,7 @@
                         <td>" . $x . "</td> 
                         <td>" . $x_value . "</td> 
                         <td><button class=\"sc-add-to-cart\"
-                        data-name=\"$x\"
+                        data-name=\"$i\"
                         data-price=\"$x_value\"
                         type=\"submit\">
                         ADD To Cart
