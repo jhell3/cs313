@@ -12,9 +12,9 @@
                 integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
                  crossorigin="anonymous">
         </script>
-        <script src="/jQuery.SimpleCart.js" ></script>
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="fontawesome.min.css"> 
+        <script src="jQuery.SimpleCart.js" ></script>
+<!--         <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome.min.css">  -->
 
     </head>
     <body>
