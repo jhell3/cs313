@@ -45,7 +45,7 @@
                 echo "<tr> 
                         <td>" . $x . "</td> 
                         <td>" . $x_value . "</td> 
-                        <td><button class=\"addCart\"
+                        <td><button class=\"sc-add-to-cart\"
                         data-name=\"$i\"
                         data-price=\"$x_value\"
                         type=\"submit\">
