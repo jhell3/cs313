@@ -7,14 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--         <link href="/simple_cart.css" rel="stylesheet">
+        <link href="/simple_cart.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
                 integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
                  crossorigin="anonymous">
         </script>
         <script src="/jQuery.SimpleCart.js" ></script>
         <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="fontawesome.min.css"> -->
+        <link rel="stylesheet" href="fontawesome.min.css"> 
 
     </head>
     <body>
@@ -45,7 +45,7 @@
                 echo "<tr> 
                         <td>" . $x . "</td> 
                         <td>" . $x_value . "</td> 
-                        <td><button class=\"sc-add-to-cart\"
+                        <td><button class=\"addCart\"
                         data-name=\"$i\"
                         data-price=\"$x_value\"
                         type=\"submit\">
