@@ -13,6 +13,8 @@
                  crossorigin="anonymous">
         </script>
         <script src="/jQuery.SimpleCart.js" ></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="fontawesome.min.css">
 
     </head>
     <body>
