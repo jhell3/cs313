@@ -55,9 +55,8 @@
                         <td>" . $_SESSION["cart"][$x][1] . "</td>
                         <td>" . $_SESSION["cart"][$x][2] . "</td>
                         <td><button class=\"addCart\"
-                        data-name=\"$x\"
-                        data-price=\"$_SESSION[\"cart\"][$x][1]\"
-                        type=\"\">
+                        name=\"item[$x]\"
+                        type=\"button\">
                         ADD To Cart
                         </button></td></tr>"
                 }
