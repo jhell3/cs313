@@ -85,7 +85,7 @@
             function addItem(x){
                console.log(x);
                <?php
-                    $_SESSION["cart"][$x][2] += 1;
+                    $_SESSION["cart"][$x][2]++;
                ?>
                var table = document.getElementById("myTable");
                 //console.log(table.rows[x+1].cells[1]);
