@@ -81,7 +81,7 @@
             } */
          ?>     
         <script>
-            function addItem(var x){
+            function addItem(x){
                console.log(x)
             }
 
