@@ -57,7 +57,7 @@
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
                         <td><button class=\"addCart\"
                         id=\"item[$x]\"
-                        type=\"button\"
+                        type=\"submit\"
                         onClick=\"addItem($x)\">
                         ADD To Cart
                         </button></td></tr>";
