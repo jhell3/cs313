@@ -63,9 +63,7 @@
                         </button></td></tr>";
                 }
                 
-                function addItem($x){
-                    $_SESSION["cart"][$x][2]++;
-                }
+                
 
         /*    $i = 0;
             foreach($items as $x => $x_value){
@@ -85,8 +83,11 @@
             } */
          ?>     
         <script>
-               
-
+               <?php
+                    function addItem($x){
+                        $_SESSION["cart"][$x][2]++;
+                    }
+                ?>  
         </script>
          
     </body>
