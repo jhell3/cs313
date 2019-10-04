@@ -87,7 +87,7 @@
                     $_SESSION["cart"][$x][2] += 1;
                ?>
                var table = document.getElementById("myTable");
-            table.refresh();
+                table.ajax.reload();
             }
 
         </script>
