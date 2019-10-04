@@ -34,7 +34,7 @@
                     $y++;
                 }
                 if($y == 0){
-                    echo "Your cart is empty, Click on the name of the website to return."
+                    echo "Your cart is empty, Click on the name of the website to return.";
                 }
             }
         ?>
