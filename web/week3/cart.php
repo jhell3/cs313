@@ -26,13 +26,15 @@
     <body>
     <h1><a href="browse.php">I Hate My Friend.</a></h1>
         <?php
-            if(empty($_SESSION["cart"])){
-                echo "Your cart is empty. Click on the logo to return to items.";
-            }
             
+            $y = 0;
             for($x = 0; $x < 7; $x++){
                 if($_SESSION["cart"][$x][2] > 0){
                     echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
+                    $y++;
+                }
+                if($y == 0){
+                    echo "Your cart is empty, Click on the name of the website to return."
                 }
             }
         ?>
