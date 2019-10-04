@@ -1,6 +1,7 @@
 <?php
     session_start();
 
+    $_SESSION["y"] = 3;
     if(empty($_SESSION["cart"])){
         $_SESSION["cart"]= array(
             array("Poop on a Stick", 12.01, 0),

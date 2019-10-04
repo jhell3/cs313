@@ -1,6 +1,7 @@
 <?php
     session_start();
 
+    
     if(empty($_SESSION["cart"])){
         $_SESSION["cart"]= array(
             array("Poop on a Stick", 12.01, 0),
@@ -34,6 +35,7 @@
                     echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
                 }
             }
+            echo $_SESSION["y"];
         ?>
 
         
