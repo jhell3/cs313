@@ -84,10 +84,11 @@
         <script>
             function addItem(x){
                console.log(x);
-               var fun = <?php
-                    json_encode($_SESSION["cart"][$x][2]++);
+               <?php
+                    $_SESSION["cart"][$x][2]++;
+                    echo $_SESSION["cart"][$x][2];
                ?>
-                console.log(fun);
+              
                var table = document.getElementById("myTable");
                 //console.log(table.rows[x+1].cells[1]);
             }
