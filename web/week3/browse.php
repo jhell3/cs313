@@ -83,7 +83,9 @@
         <script>
             function addItem(x){
                console.log(x);
-               document.getElementById("quantity[x]") = 1;
+               <?php
+                    $_SESSION["cart"][$x][2] += 1;
+               ?>
             }
 
         </script>
