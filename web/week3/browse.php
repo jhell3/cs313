@@ -51,9 +51,9 @@
             <?php
                 for($x = 0; $x < 7; $x++){
                     echo"<tr>
-                        <td>" . $_SESSION["cart"][$x][0] . "</td>
-                        <td>" . $_SESSION["cart"][$x][1] . "</td>
-                        <td>" . $_SESSION["cart"][$x][2] . "</td>
+                        <td id=\"item[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
+                        <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
+                        <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
                         <td><button class=\"addCart\"
                         id=\"item[$x]\"
                         type=\"button\"
@@ -82,7 +82,8 @@
          ?>     
         <script>
             function addItem(x){
-               console.log(x)
+               console.log(x);
+               document.getElementById(quantity[x]) = 1;
             }
 
         </script>
