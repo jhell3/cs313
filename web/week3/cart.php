@@ -1,3 +1,18 @@
+<?php
+    session_start();
+
+    if(empty($_SESSION["cart"])){
+        $_SESSION["cart"]= array(
+            array("Poop on a Stick", 12.01, 0),
+            array("Fart Gun", 122.32, 0),
+            array("Pooperi, \"TacoBell\"", 13.21, 0),
+            array("Dog Breath Spray", 15.00, 0),
+            array("Moldy Sausage", 2.13, 0),
+            array("Laughing Lamas", 5.22, 0),
+            array("Grandma's Leftover Dinner....Dentures possibly included", 3.99, 0)
+        );
+    }
+    ?>
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">

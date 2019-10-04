@@ -49,14 +49,15 @@
 
             </tr>
             <?php
-                for($x = 0; $x <= 7; $x++){
+                for($x = 0; $x < 7; $x++){
                     echo"<tr>
                         <td>" . $_SESSION["cart"][$x][0] . "</td>
                         <td>" . $_SESSION["cart"][$x][1] . "</td>
                         <td>" . $_SESSION["cart"][$x][2] . "</td>
                         <td><button class=\"addCart\"
-                        name=\"item[$x]\"
-                        type=\"button\">
+                        id=\"item[$x]\"
+                        type=\"button\"
+                        onClick=\"addCart($x)\">
                         ADD To Cart
                         </button></td></tr>";
                 }
@@ -80,7 +81,9 @@
             } */
          ?>     
         <script>
-
+            function addItem(var x){
+               console.log(x)
+            }
 
         </script>
          
