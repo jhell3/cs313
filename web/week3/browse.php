@@ -57,7 +57,7 @@
                         <td><button class=\"addCart\"
                         id=\"item[$x]\"
                         type=\"button\"
-                        onClick=\"addCart($x)\">
+                        onClick=\"addItem($x)\">
                         ADD To Cart
                         </button></td></tr>";
                 }
