@@ -52,9 +52,9 @@
                 for($x = 0; $x < 7; $x++){
                     echo"<tr>
                         <td id=\"item[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
-                        <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
-                        <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
-                        <td><button class=\"addCart\"
+                        <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>" .
+                       // <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
+                        "<td><button class=\"addCart\"
                         id=\"item[$x]\"
                         type=\"button\"
                         onClick=\"addItem($x)\">
@@ -87,7 +87,7 @@
                     $_SESSION["cart"][$x][2] += 1;
                ?>
                var table = document.getElementById("myTable");
-                console.log(table.rows[x+1].cells[1].value);
+                //console.log(table.rows[x+1].cells[1]);
             }
 
         </script>
