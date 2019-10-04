@@ -87,7 +87,7 @@
                     $_SESSION["cart"][$x][2] += 1;
                ?>
                var table = document.getElementById("myTable");
-                table.rows[x+1].cells[2].value += 1;
+                console.log(table.rows[x+1].cells[2].innerHtml.value);
             }
 
         </script>
