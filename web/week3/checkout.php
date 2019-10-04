@@ -8,7 +8,19 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        
+    <?php
+            
+            $y = 0;
+            for($x = 0; $x < 7; $x++){
+                if($_SESSION["cart"][$x][2] > 0){
+                    echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
+                    $y++;
+                }
+            }
+            if($y == 0){
+                echo "Your cart is empty, Click on the name of the website to return.";
+            }
+        ?>
 
         
         <script src="" async defer></script>

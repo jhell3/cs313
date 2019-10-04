@@ -33,12 +33,12 @@
                     echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
                     $y++;
                 }
-                if($y == 0){
-                    echo "Your cart is empty, Click on the name of the website to return.";
-                }
+            }
+            if($y == 0){
+                echo "Your cart is empty, Click on the name of the website to return.";
             }
         ?>
-
+        <button href="checkout.php">Check Out</button>
         
         <script src="" async defer></script>
     </body>
