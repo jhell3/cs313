@@ -83,7 +83,7 @@
         <script>
             function addItem(x){
                console.log(x);
-               document.getElementById(quantity[x]) = 1;
+               document.getElementById("quantity[x]") = 1;
             }
 
         </script>
