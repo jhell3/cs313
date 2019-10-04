@@ -35,7 +35,6 @@
                     echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
                 }
             }
-            echo $_SESSION["y"];
         ?>
 
         
