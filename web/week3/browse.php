@@ -44,7 +44,7 @@
             <tr>
                 <th>Objects of Prank War</th>
                 <th>Prices</th>
-                <th>Quantity</th>
+                <!-- <th>Quantity</th> -->
                 <th>Add to Cart</th>
 
             </tr>
