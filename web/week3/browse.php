@@ -58,7 +58,7 @@
                         name=\"item[$x]\"
                         type=\"button\">
                         ADD To Cart
-                        </button></td></tr>"
+                        </button></td></tr>";
                 }
 
 
