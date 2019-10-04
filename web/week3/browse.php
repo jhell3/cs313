@@ -40,7 +40,7 @@
                             "Grandma's Leftover Dinner....Dentures possibly included" => 3.99); -->
 <div id="cart"></div>
 
-        <table>
+        <table id="myTable">
             <tr>
                 <th>Objects of Prank War</th>
                 <th>Prices</th>
@@ -86,6 +86,8 @@
                <?php
                     $_SESSION["cart"][$x][2] += 1;
                ?>
+               var table = document.getElementById("myTable");
+            table.refresh();
             }
 
         </script>
