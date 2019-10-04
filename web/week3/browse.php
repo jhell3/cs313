@@ -62,7 +62,10 @@
                         ADD To Cart
                         </button></td></tr>";
                 }
-
+                
+                function addItem($x){
+                    $_SESSION["cart"][$x][2]++;
+                }
 
         /*    $i = 0;
             foreach($items as $x => $x_value){
@@ -82,16 +85,7 @@
             } */
          ?>     
         <script>
-            function addItem(x){
-               console.log(x);
-                
-               <?php
-                    $_SESSION["cart"][x][2] = 1;
-               ?>
-              
-               var table = document.getElementById("myTable");
-                //console.log(table.rows[x+1].cells[1]);
-            }
+               
 
         </script>
          
