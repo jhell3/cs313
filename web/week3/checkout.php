@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="">
     </head>
     <body method="post" action="confirmation.php">
-    <?php
+   
+   <?php
             
             $y = 0;
             for($x = 0; $x < 7; $x++){
@@ -24,10 +25,12 @@
                 echo "Your cart is empty, Click on the name of the website to return.";
             }
         ?>
+        <form action="team3.php" method="post">
         <div>
             <p> Enter your address <input name="address" type="text"></p>
             <input type="submit" value="submit">
         </div>
+        </form>
         <script src="" async defer></script>
     </body>
 </html>
