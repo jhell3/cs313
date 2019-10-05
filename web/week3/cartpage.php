@@ -32,6 +32,7 @@
                 if($_SESSION["cart"][$x][2] > 0){
                     echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
                     $y++;
+                    echo "<br>"
                 }
             }
             if($y == 0){
