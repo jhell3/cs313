@@ -29,11 +29,12 @@
             
             $y = 0; 
             for($x = 0; $x < 7; $x++){
-                echo $_POST["item[$x]"];
-                if($_POST["item[$x]"] != 0){
+                
+             //   echo $_POST["item[$x]"];
+             //   if($_POST["item[$x]"] != 0){
                     $_SESSION["cart"][$x][2] += $_POST["item[$x]"];
-                    echo $_POST["item[$x]"];
-                }
+                //    echo $_POST["item[$x]"];
+            //    }
                 if($_SESSION["cart"][$x][2] > 0){
                     echo $_SESSION["cart"][$x][2] . " " . $_SESSION["cart"][$x][0] .
                      " for: " . $_SESSION["cart"][$x][1] . " each.";
