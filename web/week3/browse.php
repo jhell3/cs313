@@ -50,15 +50,12 @@
             <?php
                 
                 for($x = 0; $x < 7; $x++){
-                    if(!is_numeric($_SESSION["cart"][$x][2])){
-                        $_SESSION["cart"][$x][2] = 0;
-                    }
                     
                     echo"<tr>
                         <td id=\"item[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
                         <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
-                        <td><input type=\"number\" value=\"$_SESSION[cart][$x][2]\">
+                        <td><input type=\"number\" value=\"0\">
                         </input></td></tr>";
                 }
 
