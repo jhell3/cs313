@@ -27,7 +27,7 @@
     <h1><a href="browse.php">I Hate My Friend.</a></h1>
         <?php
             
-            $y = 0;
+            $y = 0; 
             for($x = 0; $x < 7; $x++){
                 echo $_POST["item[$x]"];
                 if($_POST["item[$x]"] != 0){
