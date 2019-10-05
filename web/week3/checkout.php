@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body method="post" action="cartpage.php">
+    <body method="post" action="confirmation.php">
     <?php
             
             $y = 0;
@@ -26,7 +26,7 @@
         ?>
         <div>
             <p> Enter your address <input name="address" type="text"></p>
-            <button type="submit">
+            <input type="submit" value="submit">
         </div>
         <script src="" async defer></script>
     </body>
