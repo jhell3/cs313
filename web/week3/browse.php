@@ -57,7 +57,7 @@
                         <td><button class=\"addCart\"
                         id=\"item[$x]\"
                         type=\"submit\"
-                        onClick=\"myTable.reload()\">
+                        onClick=\"\">
                         ADD To Cart
                         </button></td></tr>";
                 }
