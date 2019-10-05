@@ -26,10 +26,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     </head>
-    <body>
+    <body method="post" action="cartpage.php">
     <h1>I Hate My Friend.</h1>
     <h3><a href="cart.php"> View Cart </a></h3>
-
 
 
 <!-- "items" = array("Poop on a Stick" => 12.01,
@@ -84,9 +83,8 @@
             } */
          ?>     
         <script>
-               <?php
-                    
-                ?>  
+            
+
         </script>
          
     </body>
