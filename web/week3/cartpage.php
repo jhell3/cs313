@@ -39,7 +39,7 @@
                 echo "Your cart is empty, Click on the name of the website to return.";
             }
         ?>
-        <button href="checkout.php">Check Out</button>
+        <a href="checkout.php">Check Out</a>
         
         <script src="" async defer></script>
     </body>
