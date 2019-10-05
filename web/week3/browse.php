@@ -53,7 +53,8 @@
                         <td id=\"item[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
                         <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
-                        <td><input type=\"number\" placeholder=\"0\"></input></td></tr>";
+                        <td><input type=\"number\" value=\"$_SESSION[cart][$x][2]\">
+                        </input></td></tr>";
                 }
 
                 
