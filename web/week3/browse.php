@@ -37,9 +37,8 @@
                             "Dog Breath Spray" => 15.00,
                             "Moldy Sausage" => 2.13,
                             "Laughing Lamas" => 5.22,
-                            "Grandma's Leftover Dinner....Dentures possibly included" => 3.99); -->
-<div id="cart"></div>
-
+                            "Grandma's Leftover Dinner....Dentures possibly included" => 3.99); -->                            <div id="cart"></div>
+        <form>
         <table id="myTable">
             <tr>
                 <th>Objects of Prank War</th>
@@ -54,12 +53,7 @@
                         <td id=\"item[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
                         <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
-                        <td><button class=\"addCart\"
-                        id=\"item[$x]\"
-                        type=\"submit\"
-                        onClick=\"\">
-                        ADD To Cart
-                        </button></td></tr>";
+                        <td><input type=\"number\" placeholder=\"0\"></input></td></tr>";
                 }
 
                 
@@ -80,8 +74,17 @@
                      //  <td><button id= \"b[$x]\"> Add to Cart </button></td>
                     "</tr>";
             $i += 1; 
+
+            <button class=\"addCart\"
+                        id=\"item[$x]\"
+                        type=\"submit\"
+                        onClick=\"\">
+                        ADD To Cart
+                        </button>
             } */
          ?>     
+    <input type="submit"
+</form>
         <script>
             
 
