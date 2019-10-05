@@ -28,7 +28,7 @@
     </head>
     <body method="post" action="cartpage.php">
     <h1>I Hate My Friend.</h1>
-    <h3><a href="cart.php"> View Cart </a></h3>
+    <h3><a href="cartpage.php"> View Cart </a></h3>
 
 
 <!-- "items" = array("Poop on a Stick" => 12.01,
