@@ -86,7 +86,7 @@
                         </button>
             } */
          ?>     
-    <input type="submit">
+    <button type="submit">
 </form>
         <script>
             
