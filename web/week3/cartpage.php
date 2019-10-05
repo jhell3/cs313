@@ -30,7 +30,7 @@
             for($x = 0; $x < 7; $x++){
                 
              //   echo $_POST["item[$x]"];
-                if($_POST["item[$x]"] != 0){
+                if($_POST["item$x"] != 0){
                     $_SESSION["cart"][$x][2] += $_POST["item$x"];
                 //    echo $_POST["item[$x]"];
                }
