@@ -1,3 +1,6 @@
+<?php
+    session_start();
+    ?>
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
@@ -21,7 +24,8 @@
                 echo "Your cart is empty, Click on the name of the website to return.";
             }
         ?>
-
+        <div>
+            <p> Enter your address <input name="address" type="text"></p>
         
         <script src="" async defer></script>
     </body>
