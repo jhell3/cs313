@@ -12,8 +12,11 @@
     </head>
     <body>
         <?php
-            echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1] . 
-            "Deliver to: " . $_POST["address"] ;
+            for($x = 0; $x < 7; $x++){
+                echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
+            }
+
+            echo "Deliver to: " . $_POST["address"] ;
         ?>
   
         
