@@ -31,6 +31,7 @@
             for($x = 0; $x < 7; $x++){
                 if($_POST["item[$x]"] != 0){
                     $_SESSION["cart"][$x][2] += $_POST["item[$x]"];
+                    echo $_POST["item[$x]"];
                 }
                 if($_SESSION["cart"][$x][2] > 0){
                     echo $_SESSION["cart"][$x][2] . " " . $_SESSION["cart"][$x][0] .
