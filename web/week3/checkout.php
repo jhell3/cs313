@@ -25,7 +25,7 @@
                 echo "Your cart is empty, Click on the name of the website to return.";
             }
         ?>
-        <form action="team3.php" method="post">
+        <form action="confirmation.php" method="post">
         <div>
             <p> Enter your address <input name="address" type="text"></p>
             <input type="submit" value="submit">
