@@ -58,10 +58,11 @@
                         <td><button class=\"addCart\"
                         id=\"item[$x]\"
                         type=\"submit\"
-                        onClick=\"addItem($x)\">
+                        onClick=\"myTable.reload()\">
                         ADD To Cart
                         </button></td></tr>";
                 }
+
                 
                 
 
@@ -84,9 +85,7 @@
          ?>     
         <script>
                <?php
-                    function addItem($x){
-                        $_SESSION["cart"][$x][2]++;
-                    }
+                    
                 ?>  
         </script>
          
