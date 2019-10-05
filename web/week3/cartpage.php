@@ -26,10 +26,11 @@
     <body>
     <h1><a href="browse.php">I Hate My Friend.</a></h1>
         <?php
-            
+            $item = $_POST["item[0]"];
+            echo $item;
             $y = 0; 
             for($x = 0; $x < 7; $x++){
-                
+                /*
              //   echo $_POST["item[$x]"];
              //   if($_POST["item[$x]"] != 0){
                     $_SESSION["cart"][$x][2] += $_POST["item[$x]"];
@@ -44,7 +45,7 @@
             }
             if($y == 0){
                 echo "Your cart is empty, Click on the name of the website to return.";
-            }
+            }/*/
         ?>
         <a href="checkout.php">Check Out</a>
         
