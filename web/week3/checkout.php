@@ -17,8 +17,9 @@
             $y = 0;
             for($x = 0; $x < 7; $x++){
                 if($_SESSION["cart"][$x][2] > 0){
-                    echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1];
+                    echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1] . "<br>";
                     $y++;
+
                 }
             }
             if($y == 0){
