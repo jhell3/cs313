@@ -38,7 +38,7 @@
                             "Moldy Sausage" => 2.13,
                             "Laughing Lamas" => 5.22,
                             "Grandma's Leftover Dinner....Dentures possibly included" => 3.99); -->                            <div id="cart"></div>
-        <form>
+        <form method="post" action="cartpage.php">
         <table id="myTable">
             <tr>
                 <th>Objects of Prank War</th>
@@ -52,12 +52,12 @@
                 for($x = 0; $x < 7; $x++){
                     
                     echo"<tr>
-                        <td id=\"item[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
+                        <td id=\"object[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
                         <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
-                        <td><input type=\"number\" value=\"0\">
+                        <td><input type=\"number\" value=\"0\" name=\"item[$x]\">
                         </input></td></tr>";
-                        
+
                 }
 
                 
