@@ -57,6 +57,7 @@
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
                         <td><input type=\"number\" value=\"0\">
                         </input></td></tr>";
+                        
                 }
 
                 
