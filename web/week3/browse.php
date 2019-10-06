@@ -11,12 +11,14 @@
             array("Laughing Lamas", 5.22, 0),
             array("Grandma's Leftover Dinner....Dentures possibly included", 3.99, 0)
         );   
-         for($x = 0; $x < 7; $x++){
-            if($_SESSION["cart"][$x][2] < 0){
-                $_SESSION["cart"][$x][2] = 0;
-            }
+
+    }
+    for($x = 0; $x < 7; $x++){
+        if($_SESSION["cart"][$x][2] < 0){
+            $_SESSION["cart"][$x][2] = 0;
         }
     }
+    
 
 ?>
 <!DOCTYPE html>
