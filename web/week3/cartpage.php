@@ -21,7 +21,7 @@
         <title>Cart</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assign3.css">
     </head>
     <body>
     <h1><a href="browse.php">I Hate My Friend.</a></h1>

@@ -4,10 +4,10 @@
     $_SESSION["y"] = 3;
     if(empty($_SESSION["cart"])){
         $_SESSION["cart"]= array(
-            array("Poop on a Stick", 12.01, 1),
+            array("Poop on a Stick", 12.01, 0),
             array("Fart Gun", 122.32, 0),
             array("Pooperi, \"TacoBell\"", 13.21, 0),
-            array("Dog Breath Spray", 15.00, 2),
+            array("Dog Breath Spray", 15.00, 0),
             array("Moldy Sausage", 2.13, 0),
             array("Laughing Lamas", 5.22, 0),
             array("Grandma's Leftover Dinner....Dentures possibly included", 3.99, 0)
@@ -22,7 +22,7 @@
         <title>I Hate My Friend</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assign3.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     </head>
@@ -87,7 +87,7 @@
                         </button>
             } */
          ?>     
-    <button type="submit">
+    <button type="submit">Add Items to Cart</button>
 </form>
         <script>
             
