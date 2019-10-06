@@ -47,7 +47,7 @@
                   /*  echo $_SESSION["cart"][$x][2] . " " . $_SESSION["cart"][$x][0] .
                      " for: " . $_SESSION["cart"][$x][1] . " each.";*/
                      echo 
-                        <td id=\"object[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
+                        "<td id=\"object[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
                         <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
                         <td><input type=\"number\" name=\"item$x\">
