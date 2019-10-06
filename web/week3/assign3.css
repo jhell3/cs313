@@ -14,3 +14,7 @@ table, th, td {
   button {
       background-color: chocolate;
   }
+
+  th, td {
+    padding: 15px;
+  }
