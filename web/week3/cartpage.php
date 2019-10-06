@@ -26,6 +26,15 @@
     <body>
     <h1><a href="browse.php">I Hate My Friend.</a></h1>
         <?php
+        echo "<table>
+        <tr>
+            <th>Objects of Prank War</th>
+            <th>Prices</th>
+            <th>Quantity in Cart</th>
+            <th>Increase/Decrease Quantity</th>
+
+        </tr>
+        <tr>"
             $y = 0; 
             for($x = 0; $x < 7; $x++){
                 
@@ -37,15 +46,7 @@
                 if($_SESSION["cart"][$x][2] > 0){
                   /*  echo $_SESSION["cart"][$x][2] . " " . $_SESSION["cart"][$x][0] .
                      " for: " . $_SESSION["cart"][$x][1] . " each.";*/
-                     echo "<table>
-                     <tr>
-                         <th>Objects of Prank War</th>
-                         <th>Prices</th>
-                         <th>Quantity in Cart</th>
-                         <th>Increase/Decrease Quantity</th>
-         
-                     </tr>
-                     <tr>
+                     echo 
                         <td id=\"object[$x]\">" . $_SESSION["cart"][$x][0] . "</td>
                         <td id=\"price[$x]\">" . $_SESSION["cart"][$x][1] . "</td>
                         <td id=\"quantity[$x]\">" . $_SESSION["cart"][$x][2] . "</td>
