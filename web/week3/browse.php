@@ -43,8 +43,8 @@
             <tr>
                 <th>Objects of Prank War</th>
                 <th>Prices</th>
-                <th>Quantity</th>
-                <th>Add to Cart</th>
+                <th>Quantity in Cart</th>
+                <th>Number to Add to Cart</th>
 
             </tr>
             <?php
