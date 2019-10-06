@@ -11,7 +11,10 @@
         <link rel="stylesheet" href="assign3.css">
     </head>
     <body>
+        <h1>Purchase Sucessful</h1>
+        <h3>Item will be shipped in 2-143 business years.</h3>
         <?php
+            
             for($x = 0; $x < 7; $x++){
                 if($_SESSION["cart"][$x][2] > 0){
                     echo $_SESSION["cart"][$x][0] . " for: " . $_SESSION["cart"][$x][1] . "<br>";
@@ -19,6 +22,7 @@
             }
             
             echo "Deliver to: " . $_POST["address"] ;
+            session_destroy();
         ?>
   
         
