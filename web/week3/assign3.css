@@ -1,4 +1,4 @@
-body{
+body, input{
     background-color: burlywood;
     
 }
@@ -11,3 +11,6 @@ table, th, td {
     border: 5px solid blue;
   }
   
+  button {
+      background-color: chocolate;
+  }
