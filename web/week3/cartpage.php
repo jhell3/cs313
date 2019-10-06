@@ -34,7 +34,7 @@
             <th>Increase/Decrease Quantity</th>
 
         </tr>
-        <tr>"
+        <tr>";
             $y = 0; 
             for($x = 0; $x < 7; $x++){
                 
