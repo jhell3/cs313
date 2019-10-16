@@ -12,6 +12,13 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <table>
+            <tr>        
+                <th>Pokedex</th>
+                <th>Name</th>
+                <th>type</th>
+            </tr>
+                
         <?php
         try
         {
@@ -36,8 +43,13 @@
 
         }
             foreach ($db->query('SELECT * FROM pokemon') as $row){
-                echo $row['pokedex'] . "test" . $row['name'];
+                echo "<tr>
+                        <td>"$row['pokedex'] . "</td>
+                        <td>"$row['name'] . "</td>
+                        <td>"$row['type'] . "</td>
+                    </tr>";
             }
+            echo "</table>";
         ?>
 
         <script src="" async defer></script>
