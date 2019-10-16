@@ -14,7 +14,7 @@
     <body>
         <?php
             foreach ($db->query('SELECT * FROM pokemon') as $row){
-                echo $row[pokedex] . "test" . $row[name];
+                echo $row['Pokedex'] . "test" . $row['Name'];
             }
         ?>
 
