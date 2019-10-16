@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <form action="info.php" method="GET">
+            <p>Search by Pokedex number<input name="pokedex"><button type="submit"></button></p>
         <table>
             <tr>        
                 <th>Pokedex</th>
