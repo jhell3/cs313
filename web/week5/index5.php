@@ -44,9 +44,9 @@
         }
             foreach ($db->query('SELECT * FROM pokemon') as $row){
                 echo "<tr>
-                        <td>"$row['pokedex'] . "</td>
-                        <td>"$row['name'] . "</td>
-                        <td>"$row['type'] . "</td>
+                        <td>" . $row['pokedex'] . "</td>
+                        <td>" . $row['name'] . "</td>
+                        <td>" . $row['type'] . "</td>
                     </tr>";
             }
             echo "</table>";
