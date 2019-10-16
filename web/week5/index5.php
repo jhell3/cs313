@@ -33,9 +33,10 @@
         {
           echo 'Error!: ' . $ex->getMessage();
           die();
+
         }
             foreach ($db->query('SELECT * FROM pokemon') as $row){
-                echo $row['Pokedex'] . "test" . $row['Name'];
+                echo $row['pokedex'] . "test" . $row['name'];
             }
         ?>
 
