@@ -44,7 +44,7 @@
             
            $pokedex = $_GET['pokedex'];
 
-            foreach ($db->query("SELECT * FROM pokemon WHERE pokedex = \'$pokedex\';") as $row){
+            foreach ($db->query("SELECT * FROM pokemon WHERE pokedex=\"$pokedex\";") as $row){
                 echo "<tr>
                         <td>" . $row['pokedex'] . "</td>
                         <td>" . $row['name'] . "</td>
