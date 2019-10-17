@@ -43,9 +43,10 @@
         }
             
            $pokedex = $_GET['pokedex'];
-           $statement = $db->prepare("SELECT $pokedex FROM pokemon");
+           $statement = $db->prepare("SELECT * FROM pokemon");
            $statement->execute();
            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                    
                     echo "<tr>
                         <td>" . $row['pokedex'] . "</td>
                         <td>" . $row['name'] . "</td>
