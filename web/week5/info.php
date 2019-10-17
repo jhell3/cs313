@@ -22,10 +22,9 @@
         <?php
        
            $pokedex = $_GET['pokedex'];
-           $statement = $db->prepare("SELECT * FROM pokemon");
+           $statement = $db->prepare("SELECT * FROM pokemon where pokedex = $pokedex");
            $statement->execute();
-           
-            while ($row=mysqli_fetch_row($pokedex)){
+           while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
                     echo "<tr>
                         <td>" . $row['pokedex'] . "</td>
                         <td>" . $row['name'] . "</td>
