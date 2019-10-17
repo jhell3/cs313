@@ -44,6 +44,23 @@
                 <th>Sp. Attack</th>
                 <th>Sp. Defense</th>
                 <th>Speed</th>
+                <?php
+                $statement = $db->prepare("SELECT * FROM stats where pokedex = $pokedex");
+                $statement->execute();
+                while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                         echo "<tr>
+                             <td>" . $row['hp'] . "</td>
+                             <td>" . $row['attack'] . "</td>
+                             <td>" . $row['defense'] . "</td>
+                             <td>" . $row['sp_attack'] . "</td>
+                             <td>" . $row['sp_defense'] . "</td>
+                             <td>" . $row['speed'] . "</td>
+                         </tr>";
+                 }
+                 
+                 
+                 echo "</table>";
+                ?>
             </tr>
         </table>
         <script src="" async defer></script>
