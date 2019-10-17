@@ -43,22 +43,17 @@
         }
             
            $pokedex = $_GET['pokedex'];
-/*
-            foreach ($db->query("SELECT * FROM pokemon WHERE pokedex=\"$pokedex\";") as $row){
-                echo "<tr>
+           $statement = $db->prepare("SELECT * FROM pokemon");
+           $statement->execute();
+           while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                    echo "<tr>
                         <td>" . $row['pokedex'] . "</td>
                         <td>" . $row['name'] . "</td>
                         <td>" . $row['type'] . "</td>
                     </tr>";
             }
-            */
-            foreach ($db->query('SELECT * FROM pokemon') as $row){
-                echo "<tr>
-                        <td>" . $row['pokedex'] . "</td>
-                        <td>" . $row['name'] . "</td>
-                        <td>" . $row['type'] . "</td>
-                    </tr>";
-            }
+            
+            
             echo "</table>";
         ?>
 
