@@ -40,10 +40,9 @@
         {
           echo 'Error!: ' . $ex->getMessage();
           die();
-        
-          $pokedex = $_GET['pokedex'];
-          echo $pokedex;
         }
+
+           $pokedex = $_GET['pokedex'];
             foreach ($db->query("SELECT * FROM pokemon WHERE pokedex = \'$pokedex\';") as $row){
                 echo "<tr>
                         <td>" . $row['pokedex'] . "</td>
@@ -53,6 +52,7 @@
             }
             echo "</table>";
         ?>
+
         <table>
             <tr>
                 <th>HP</th>
