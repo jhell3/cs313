@@ -24,13 +24,18 @@
            $pokedex = $_GET['pokedex'];
            $statement = $db->prepare("SELECT * FROM pokemon");
            $statement->execute();
+           $i = 1;
            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-            if($row === $pokedex)
+            if($i === $pokedex){
                     echo "<tr>
                         <td>" . $row['pokedex'] . "</td>
                         <td>" . $row['name'] . "</td>
                         <td>" . $row['type'] . "</td>
                     </tr>";
+            }
+            else{
+                $i++;
+            }
             }
             
             
