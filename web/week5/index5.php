@@ -13,7 +13,7 @@
     </head>
     <body>
         <form action="info.php" method="GET">
-            <p>Search by Pokedex number<input name="pokedex"><button type="submit"></button></p>
+            <p>Search by Pokedex number<input name="pokedex"><button type="submit">Search</button></p>
         <table>
             <tr>        
                 <th>Pokedex</th>
