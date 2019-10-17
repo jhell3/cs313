@@ -24,7 +24,8 @@
            $pokedex = $_GET['pokedex'];
            $statement = $db->prepare("SELECT * FROM pokemon");
            $statement->execute();
-           while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+           
+            while ($row=mysqli_fetch_row($pokedex)){
                     echo "<tr>
                         <td>" . $row['pokedex'] . "</td>
                         <td>" . $row['name'] . "</td>
