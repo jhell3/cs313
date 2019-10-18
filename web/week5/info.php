@@ -44,6 +44,7 @@
                 <th>Sp. Attack</th>
                 <th>Sp. Defense</th>
                 <th>Speed</th>
+            </tr>
                 <?php
                 $statement = $db->prepare("SELECT * FROM stats where pokedex = $pokedex");
                 $statement->execute();
@@ -61,7 +62,7 @@
                  
                  echo "</table>";
                 ?>
-            </tr>
+            
         </table>
         <script src="" async defer></script>
     </body>
