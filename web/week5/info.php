@@ -46,6 +46,7 @@
                 <th>Speed</th>
             </tr>
                 <?php
+                $pokedex = $_GET['pokedex'];
                 $statement = $db->prepare("SELECT * FROM stats where pokedex = $pokedex");
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
