@@ -3,3 +3,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  tr:nth-child(even) {
+      background-color: green;
+  }
+  tr:nth-child(odd){
+      background-color: lawngreen;
+  }
