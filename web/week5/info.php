@@ -42,7 +42,7 @@
                 <th>Sp. Defense</th>
                 <th>Speed</th>
             </tr>
-                <?php
+            <?php
                 $pokedex = $_GET['pokedex'];
                 $statement2 = $db->prepare("SELECT * FROM stats where id = $pokedex");
                 $statement2->execute();
@@ -64,7 +64,7 @@
                     $evolution_num = $row['evolution_num'];
                     $evolve_at = $row['evolve_at'];
                 }
-                if($evolution_num == 1.3){ //|| 1.2 || 2.3){
+                if($evolution_num == 1.3 || 1.2 || 2.3){
                     
                     $pokedex++;
                     $statement = $db->prepare("SELECT * FROM pokemon where pokedex = $pokedex");
@@ -72,7 +72,7 @@
                     while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
                         $name2 =  $row['name'];
                     }
-                    echo "$name evolves into $name2 at level $evolve_at.<br>";
+                    echo "$name evolves into $name2 at level $evolve_at<br>";
                     
                     if($evolution_num == 1.3){
                         $pokedex++;
@@ -91,7 +91,6 @@
                         
                     }
                     $pokedex--;
-                    
                 }
 
                 
