@@ -18,11 +18,11 @@
 </form>
 <form action="info2.php" method="GET">
     <p>Search by Pokemon name<input name="pname"><button type="submit">Search</button></p>
-</form>
+</form>    
         <?php
        
-           $pokedex = $_GET['pokedex'];
-           $statement = $db->prepare("SELECT * FROM pokemon where pokedex = $pokedex");
+           $name = $_GET['pname'];
+           $statement = $db->prepare("SELECT * FROM pokemon where name = $name");
            $statement->execute();
            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
                     $pokedex = $row['pokedex'];
@@ -45,7 +45,7 @@
                 <th>Speed</th>
             </tr>
                 <?php
-                $pokedex = $_GET['pokedex'];
+                $name = $_GET['pname'];
                 $statement = $db->prepare("SELECT * FROM stats where id = $pokedex");
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
