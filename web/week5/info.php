@@ -59,8 +59,6 @@
                              <td>" . $row['speed'] . "</td>
                          </tr>";
                  }
-                 
-                 
                  echo "</table>";
                 ?>
             
