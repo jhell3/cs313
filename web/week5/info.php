@@ -64,7 +64,7 @@
                     $evolution_num = $row['evolution_num'];
                     $evolve_at = $row['evolve_at'];
                 }
-                if($evolution_num === 1.3 || 1.2 || 2.3){
+                if($evolution_num === 1.3){// || 1.2 || 2.3){
                     
                     $pokedex++;
                     $statement = $db->prepare("SELECT * FROM pokemon where pokedex = $pokedex");
