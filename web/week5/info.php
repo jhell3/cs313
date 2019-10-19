@@ -12,12 +12,10 @@
         <link rel="stylesheet" href="week5.css">
     </head>
     <body>
-        <table>
-            <tr>        
-                <th>Pokedex</th>
-                <th>Name</th>
-                <th>Type</th>
-            </tr>
+        <h3><a href="index5.php">Return Home</a></h3>
+    <form action="info.php" method="GET">
+            <p>Search by Pokedex number<input name="pokedex"><button type="submit">Search</button></p>
+</form>
                 
         <?php
        
@@ -25,15 +23,12 @@
            $statement = $db->prepare("SELECT * FROM pokemon where pokedex = $pokedex");
            $statement->execute();
            while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-                    echo "<tr>
-                        <td>" . $row['pokedex'] . "</td>
-                        <td>" . $row['name'] . "</td>
-                        <td>" . $row['type'] . "</td>
-                    </tr>";
+                    $pokedex = $row['pokedex'];
+                    $name =  $row['name'];
+                    $type =  $row['type'];
             }
+            echo "<h1> $pokedex</h1>";
             
-            
-            echo "</table>";
         ?>
 
         <table>

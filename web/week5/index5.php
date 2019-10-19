@@ -14,6 +14,7 @@
     <body>
         <form action="info.php" method="GET">
             <p>Search by Pokedex number<input name="pokedex"><button type="submit">Search</button></p>
+</form>
         <table>
             <tr>        
                 <th>Pokedex</th>

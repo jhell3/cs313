@@ -17,3 +17,6 @@ table, th, td {
   tr:nth-child(odd){
       background-color: lawngreen;
   }
+  h1{
+      text-align: center;
+  }
