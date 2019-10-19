@@ -9,7 +9,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="">
     </head>
     <body>
         <form action="info.php" method="GET">
