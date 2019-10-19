@@ -44,9 +44,9 @@
             </tr>
                 <?php
                 $pokedex = $_GET['pokedex'];
-                $statement = $db->prepare("SELECT * FROM stats where id = $pokedex");
-                $statement->execute();
-                while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                $statement2 = $db->prepare("SELECT * FROM stats where id = $pokedex");
+                $statement2->execute();
+                while ($row = $statement2->fetch(PDO::FETCH_ASSOC)){
                          echo "<tr>
                              <td>" . $row['hp'] . "</td>
                              <td>" . $row['attack'] . "</td>
@@ -57,8 +57,37 @@
                          </tr>";
                  }
                  echo "</table>";
+                
+                $statement3 = $db->prepare("SELECT * FROM evolution where id = $pokedex");
+                $statement3->execute();
+                while ($row = $statement3->fetch(PDO::FETCH_ASSOC)){
+                    $evolution_num = $row['evolution_num'];
+                    $evolve_at = $row['evolve_at'];
+                }
+                if($evolution_num == 1.3 || 1.2 || 2.3){
+                    $pokedex++;
+                    while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                        $name2 =  $row['name'];
+                    }
+                    echo "$name evolves into $name2 at level $evolve_at.<br>";
+                    if($evolution_num == 1.3){
+                        $pokedex++;
+                        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                            $name3 =  $row['name'];
+                        }
+                        while ($row = $statement3->fetch(PDO::FETCH_ASSOC)){
+                            $evolve_at2 = $row['evolve_at'];
+                        }
+                        echo "$name2 evolves into $name3 at level $evolve_at2";
+                        $pokedex--;
+                    }
+                    $pokedex--;
+                    
+                }
+
+                echo "$name evolves into $name2 at level $evolve_at";
                 ?>
-            
+
     
         <script src="" async defer></script>
     </body>
