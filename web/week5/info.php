@@ -66,6 +66,7 @@
                 }
                 if($evolution_num == 1.3){ //|| 1.2 || 2.3){
                     $pokedex++;
+                    $statement->execute();
                     while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
                         $name2 =  $row['name'];
                     }
