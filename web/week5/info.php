@@ -64,7 +64,7 @@
                     $evolution_num = $row['evolution_num'];
                     $evolve_at = $row['evolve_at'];
                 }
-                if($evolution_num == 1.3 || 1.2 || 2.3){
+                if($evolution_num == 1.3){ //|| 1.2 || 2.3){
                     $pokedex++;
                     while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
                         $name2 =  $row['name'];
@@ -85,7 +85,7 @@
                     
                 }
 
-                echo "$name evolves into $name2 at level $evolve_at";
+                
                 ?>
 
     
