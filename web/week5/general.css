@@ -11,9 +11,9 @@ table, th, td {
   table {
     border-collapse: collapse;
   }
-  tr:nth-child(even) {
+  /* tr:nth-child(even) {
       background-color: green;
   }
   tr:nth-child(odd){
       background-color: lawngreen;
-  }
+  } */
