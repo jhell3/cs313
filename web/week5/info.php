@@ -28,7 +28,8 @@
                     $type =  $row['type'];
             }
             echo "<h1> $name</h1>
-            <br> <h2>Pokedex Number: $pokedex    Pokemon Type: $type";
+            <br> <h2>Pokedex Number: $pokedex 
+            <br> Pokemon Type: $type</h2>";
             
         ?>
 
