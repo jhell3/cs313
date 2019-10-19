@@ -27,7 +27,8 @@
                     $name =  $row['name'];
                     $type =  $row['type'];
             }
-            echo "<h1> $pokedex</h1>";
+            echo "<h1> $name</h1>
+            <br> <h2>Pokedex Number: $pokedex    Pokemon Type: $type";
             
         ?>
 
