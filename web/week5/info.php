@@ -16,9 +16,7 @@
     <form action="info.php" method="GET">
             <p>Search by Pokedex number<input name="pokedex"><button type="submit">Search</button></p>
 </form>
-<form action="info2.php" method="GET">
-    <p>Search by Pokemon name<input name="pname"><button type="submit">Search</button></p>
-</form>
+
         <?php
        
            $pokedex = $_GET['pokedex'];
