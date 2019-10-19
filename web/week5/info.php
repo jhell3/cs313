@@ -47,7 +47,7 @@
             </tr>
                 <?php
                 $pokedex = $_GET['pokedex'];
-                $statement = $db->prepare("SELECT * FROM stats where pokedex = $pokedex");
+                $statement = $db->prepare("SELECT * FROM stats where id = $pokedex");
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
                          echo "<tr>
