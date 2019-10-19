@@ -106,7 +106,22 @@
                             $evolve_at2 = $row['evolve_at'];
                         }
                     echo "$name2 evolves into $name at level $evolve_at2<br>";
-                    
+                    if($evolution_num == 3.3){
+                        $pokedex--;
+                        $statement = $db->prepare("SELECT * FROM pokemon where pokedex = $pokedex");
+                        $statement->execute();
+                        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+                            $name1 =  $row['name'];
+                        }
+                        $statement3 = $db->prepare("SELECT * FROM evolution where id = $pokedex");
+                        $statement3->execute();
+                        while ($row = $statement3->fetch(PDO::FETCH_ASSOC)){
+                            $evolve_at1 = $row['evolve_at'];
+                        }
+                        $pokedex++;
+                        echo "$name1 evolves into $name2 at level $evolve_at1<br>";
+                    }
+                    $pokedex++;
                 }
 
                 ?>
