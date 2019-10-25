@@ -31,12 +31,12 @@ INSERT INTO pokemon
 DROP TABLE stats;
 DROP TABLE evolution;
 DROP TABLE pokemon;
-
+--CREATE TABLE login(username VARCHAR PRIMARY KEY NOT NULL, password VARCHAR NOT NULL)
 CREATE TABLE pokemon(name VARCHAR(30) NOT NULL, pokedex SERIAL NOT NULL  PRIMARY KEY, type VARCHAR(40));
 CREATE TABLE stats( id SERIAL NOT NULL PRIMARY KEY REFERENCES pokemon(pokedex), hp int NOT NULL, attack int NOT NULL, defense int NOT NULL, sp_attack int NOT NULL, sp_defense int NOT NULL, speed int NOT NULL);
 CREATE TABLE evolution(id SERIAL NOT NULL PRIMARY KEY REFERENCES pokemon(pokedex), evolution_num FLOAT NOT NULL, evolve_at char(20));
 
-
+--INSERT INTO login VALUES ('guest', 'guest');
 INSERT INTO pokemon(name, type) VALUES ('Bulbasaur', 'grass/poison');
 INSERT INTO pokemon(name, type) VALUES ('Ivysaur', 'grass/poison');
 INSERT INTO pokemon(name, type) VALUES ('Venusaur', 'grass/poison');

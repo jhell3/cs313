@@ -1,6 +1,15 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scripture Details</title>
+  </head>
+  <body>
 <?php
-try
-{
+// echo "<p>here</p>";
+$book = $_GET['book'];
+$chapter = $_GET['chapter'];
+// print "<p>" . "SELECT * FROM scriptures WHERE book = '$book';" ."</p>";
+try {
   $dbUrl = getenv('DATABASE_URL');
 
   $dbOpts = parse_url($dbUrl);
@@ -15,21 +24,28 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
-catch (PDOException $ex)
-{
+catch (PDOException $ex) {
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-$book = $_GET['book']
 
+$str = "";
 try {
-foreach ($db->query("SELECT * FROM scriptures WHERE book = \'$book\';") as $row)
-{
-  echo "<p><b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</b> - \"" . $row['content'] . "\"";
-  echo '<br/></p>';
+  foreach ($db->query("SELECT * FROM TEAM_ACT.scriptures WHERE book = '$book' AND chapter = '$chapter';") as $row) {
+    $str .= "<h1>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</h1>";
+    $str .= "<p>\"" . $row['content'] . "\"</p>";
+  }
 }
-}
-catch (PDOException $ex){
+catch (PDOException $ex) {
   echo "<pre>ERROR: " . $ex->getMessage() . " \n\$book=$book</pre>";
+  die();
 }
+echo $str . "<br>";
+
+
 ?>
+  <p><a href="db.php">Return to Scripture Resources</a></p>
+
+
+  </body>
+</html>
