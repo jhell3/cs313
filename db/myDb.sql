@@ -49,15 +49,24 @@ INSERT INTO pokemon(name, type) VALUES ('Blastoise', 'water');
 
 
 INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (45, 49, 49, 65, 65, 45); --1
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (60, 62, 63, 80, 80, 60); --2
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (80, 82, 83, 100, 100, 80); --3
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (39, 52, 43, 60, 50, 65); --4
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (58, 64, 58, 80, 65, 80); --5
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (78, 84, 78, 109, 85, 100); --6
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (44, 48, 65, 50, 64, 43); --7
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (59, 63, 80, 65, 80, 58); --8
+INSERT INTO stats(hp, attack, defense, sp_attack, sp_defense, speed) VALUES (79, 83, 100, 85, 108, 100); --9
+
 
 INSERT INTO evolution(evolution_num, evolve_at) VALUES(1.3, 16); -- 1
-INSERT INTO evolution(evolution_num, evolve_at) VALUES(2.3, 36);
+INSERT INTO evolution(evolution_num, evolve_at) VALUES(2.3, 32);
 INSERT INTO evolution(evolution_num) VALUES(3.3);
 
 INSERT INTO evolution(evolution_num, evolve_at) VALUES(1.3, 16); -- 4 char
-INSERT INTO evolution(evolution_num, evolve_at) VALUES(2.3, 36);
+INSERT INTO evolution(evolution_num, evolve_at) VALUES(2.3, 32);
 INSERT INTO evolution(evolution_num) VALUES(3.3);
 
 INSERT INTO evolution(evolution_num, evolve_at) VALUES(1.3, 16); -- 4 squirt
-INSERT INTO evolution(evolution_num, evolve_at) VALUES(2.3, 36);
+INSERT INTO evolution(evolution_num, evolve_at) VALUES(2.3, 32);
 INSERT INTO evolution(evolution_num) VALUES(3.3);
