@@ -70,12 +70,10 @@
 	        echo "Error with DB. Details 3: $ex";
 	        die();
         }
-        header("Location: addpokemon.php?");
+        header("Location: addpokemon.php");
         die();
 
     ?>
-
-    
 
     </body>
 </html>
