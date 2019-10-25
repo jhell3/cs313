@@ -37,29 +37,40 @@
             <div class="form-row">
                 <div class="col">
                     <label for="hp">HP</label>
-                    <input type="text" class="form-control" name="hp" required>
+                    <input type="text" class="form-control" name="hp">
                 </div>
                 <div class="col">
                     <label for="attack">Attack</label>
-                    <input type="text" class="form-control" name="attack" required>
+                    <input type="text" class="form-control" name="attack">
                 </div>
                 <div class="col">
                     <label for="defense">Defense</label>
-                    <input type="text" class="form-control" name="defense" Defenseed>
+                    <input type="text" class="form-control" name="defense">
                 </div>
                 <div class="col">
                     <label for="sp_attack">Special Attack</label>
-                    <input type="text" class="form-control" name="sp_attack" required>
+                    <input type="text" class="form-control" name="sp_attack">
                 </div>
                 <div class="col">
                     <label for="sp_defense">Special Defense</label>
-                    <input type="text" class="form-control" name="sp_defense" required>
+                    <input type="text" class="form-control" name="sp_defense">
                 </div>
                 <div class="col">
                     <label for="speed">Speed</label>
-                    <input type="text" class="form-control" name="speed" required>
+                    <input type="text" class="form-control" name="speed">
                 </div>
             </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="evo_num">Evolution Number</label>
+                    <input type="text" class="form-control" name="evo_num" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                    <label for="evo_at">Evolve At</label>
+                    <input type="text" class="form-control" name="evo_at" required>
+              </div>
+            </div>  
         </div>
             
         <button class="btn btn-primary" type="submit">Submit form</button>
