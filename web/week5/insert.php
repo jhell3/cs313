@@ -61,8 +61,8 @@
         {
             $query = 'INSERT INTO evolution(evolution_num, evolve_at) VALUES(:evolution_num, :evolve_at)';
             $statement = $db->prepare($query);
-            $statement->bindValue(':evo_num', $evo_num);
-            $statement->bindValue(':evo_at', $evo_at);
+            $statement->bindValue(':evolution_num', $evo_num);
+            $statement->bindValue(':evolve_at', $evo_at);
             $statement->execute();
         }
         catch (Exception $ex)
