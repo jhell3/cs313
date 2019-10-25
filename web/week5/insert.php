@@ -31,6 +31,17 @@
         $evo_num = POST_["evo_num"];
         $evo_at = POST_["evo_at"];
 
+        echo $name;
+        echo $type;
+        echo $hp;
+        echo $attack;
+        echo $defense;
+        echo $sp_attack;
+        echo $sp_defense;
+        echo $speed;
+        echo $evo_num;
+        echo $evo_at;
+
         try
         {
             $query = 'INSERT INTO pokemon(name, type) VALUES(:name, :type)';
@@ -76,7 +87,7 @@
 	        echo "Error with DB. Details: $ex";
 	        die();
         }
-        header("Location: notes.php?courseId=$course");
+        header("Location: addpokemon.php?");
         die();
 
     ?>
