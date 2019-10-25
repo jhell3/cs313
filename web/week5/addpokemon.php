@@ -34,44 +34,30 @@
             </div>  
             
             <div class="form-row">
-                <div class="col-md-4 mb-6">
+                <div class="col">
                     <label for="hp">HP</label>
                     <input type="text" class="form-control" name="hp" required>
                 </div>
-                <div class="col-md-4 mb-6">
+                <div class="col">
                     <label for="attack">Attack</label>
                     <input type="text" class="form-control" name="attack" required>
                 </div>
-                <div class="col-md-4 mb-6">
+                <div class="col">
                     <label for="defense">Defense</label>
                     <input type="text" class="form-control" name="defense" Defenseed>
                 </div>
-                <div class="col-md-4 mb-6">
+                <div class="col">
                     <label for="sp_attack">Special Attack</label>
                     <input type="text" class="form-control" name="sp_attack" required>
                 </div>
-                <div class="col-md-4 mb-6">
+                <div class="col">
                     <label for="sp_defense">Special Defense</label>
                     <input type="text" class="form-control" name="sp_defense" required>
                 </div>
-                <div class="col-md-4 mb-6">
+                <div class="col">
                     <label for="speed">Speed</label>
                     <input type="text" class="form-control" name="speed" required>
                 </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="validationDefault03">City</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationDefault04">State</label>
-                <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationDefault05">Zip</label>
-                <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
             </div>
         </div>
             
