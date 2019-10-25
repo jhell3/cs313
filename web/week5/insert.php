@@ -52,7 +52,7 @@
         }
         catch (Exception $ex)
         {
-	        echo "Error with DB. Details: $ex";
+	        echo "Error with DB. Details 1: $ex";
 	        die();
         }
         
@@ -70,7 +70,7 @@
         }
         catch (Exception $ex)
         {
-	        echo "Error with DB. Details: $ex";
+	        echo "Error with DB. Details 2: $ex";
 	        die();
         }
 
@@ -84,7 +84,7 @@
         }
         catch (Exception $ex)
         {
-	        echo "Error with DB. Details: $ex";
+	        echo "Error with DB. Details 3: $ex";
 	        die();
         }
         header("Location: addpokemon.php?");

@@ -61,7 +61,7 @@
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="evo_num">Evolution Number</label>
-                    <input type="number" class="form-control" name="evo_num" required>
+                    <input type="number" class="form-control" name="evo_num" step="0.1"required>
               </div>
               <div class="col-md-4 mb-3">
                     <label for="evo_at">Evolve At</label>
