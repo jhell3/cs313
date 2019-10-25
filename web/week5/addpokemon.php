@@ -24,11 +24,11 @@
 
 
         <div class="form-row">
-            <div class="col-md-4 mb-2">
+            <div class="col-md-4 mb-3">
                 <label for="name">Pokemon Name</label>
                 <input type="text" class="form-control" name="name" required>
             </div>
-            <div class="col-md-4 mb-2">
+            <div class="col-md-4 mb-3">
                 <label for="type">Type</label>
                 <input type="text" class="form-control" name="type"  required>
             </div>  
