@@ -3,16 +3,16 @@
  $db = get_db();
  
 
-        $name = POST_['name'];
-        $type = POST_['type'];
-        $hp = POST_['hp'];
-        $attack = POST_['attack'];
-        $defense = POST_['defense'];
-        $sp_attack = POST_['sp_attack'];
-        $sp_defense = POST_['sp_defense'];
-        $speed = POST_['speed'];
-        $evo_num = POST_['evo_num'];
-        $evo_at = POST_['evo_at'];
+        $name = $_POST['name'];
+        $type = $_POST['type'];
+        $hp = $_POST['hp'];
+        $attack = $_POST['attack'];
+        $defense = $_POST['defense'];
+        $sp_attack = $_POST['sp_attack'];
+        $sp_defense = $_POST['sp_defense'];
+        $speed = $_POST['speed'];
+        $evo_num = $_POST['evo_num'];
+        $evo_at = $_POST['evo_at'];
 
         echo $name;
         echo $type;
