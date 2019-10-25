@@ -21,9 +21,6 @@
             <p>Search by Pokedex number<input name="pokedex"><button type="submit">Search</button></p>
     </form>
     <form action="insert.php" method="POST">
-    <form>
-
-
         <div class="form-row">
             <div class="col-md-4 mb-3">
                 <label for="name">Pokemon Name</label>
@@ -37,34 +34,34 @@
             <div class="form-row">
                 <div class="col">
                     <label for="hp">HP</label>
-                    <input type="text" class="form-control" name="hp">
+                    <input type="number" class="form-control" name="hp">
                 </div>
                 <div class="col">
                     <label for="attack">Attack</label>
-                    <input type="text" class="form-control" name="attack">
+                    <input type="number" class="form-control" name="attack">
                 </div>
                 <div class="col">
                     <label for="defense">Defense</label>
-                    <input type="text" class="form-control" name="defense">
+                    <input type="number" class="form-control" name="defense">
                 </div>
                 <div class="col">
                     <label for="sp_attack">Special Attack</label>
-                    <input type="text" class="form-control" name="sp_attack">
+                    <input type="number" class="form-control" name="sp_attack">
                 </div>
                 <div class="col">
                     <label for="sp_defense">Special Defense</label>
-                    <input type="text" class="form-control" name="sp_defense">
+                    <input type="number" class="form-control" name="sp_defense">
                 </div>
                 <div class="col">
                     <label for="speed">Speed</label>
-                    <input type="text" class="form-control" name="speed">
+                    <input type="number" class="form-control" name="speed">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="evo_num">Evolution Number</label>
-                    <input type="text" class="form-control" name="evo_num" required>
+                    <input type="number" class="form-control" name="evo_num" required>
               </div>
               <div class="col-md-4 mb-3">
                     <label for="evo_at">Evolve At</label>
@@ -75,5 +72,23 @@
             
         <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-
-    </form> 
+    <table>
+            <tr>        
+                <th>Pokedex</th>
+                <th>Name</th>
+                <th>type</th>
+            </tr>
+                
+        <?php
+        
+            foreach ($db->query('SELECT * FROM pokemon') as $row){
+                echo "<tr>
+                        <td>" . $row['pokedex'] . "</td>
+                        <td>" . $row['name'] . "</td>
+                        <td>" . $row['type'] . "</td>
+                    </tr>";
+            }
+            echo "</table>";
+        ?>
+</body>
+</html>
