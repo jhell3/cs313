@@ -86,7 +86,28 @@
                 echo "Error with DB. Details 1: $ex";
                 die();
             }
-            
+            try
+            {
+                $query = "DELETE FROM evolution WHERE id = $pokedex";
+                $statement = $db->prepare($query);
+                $statement->execute();
+            }
+            catch (Exception $ex)
+            {
+                echo "Error with DB. Details 1: $ex";
+                die();
+            }
+            try
+            {
+                $query = "DELETE FROM pokemon WHERE pokedex = $pokedex";
+                $statement = $db->prepare($query);
+                $statement->execute();
+            }
+            catch (Exception $ex)
+            {
+                echo "Error with DB. Details 1: $ex";
+                die();
+            }
         }
 
         header("Location: addpokemon.php");
