@@ -25,7 +25,6 @@
             <label for="inject">Injection type</label>
             <input type="radio" name="inject" value="add">Add<br>
             <input type="radio" name="inject" value="delete">Delete<br>
-            <input type="radio" name="inject" value="update">Update<br>
             If delete, just use pokedex number. 
         </div>
 
