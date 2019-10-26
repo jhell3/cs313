@@ -21,7 +21,7 @@
             <p>Search by Pokedex number<input name="pokedex"><button type="submit">Search</button></p>
     </form>
     <form action="insert.php" method="POST">
-        <div class="form-row">
+        <div>
             <label for="inject">Injection type</label>
             <input type="radio" name="inject" value="add">Add<br>
             <input type="radio" name="inject" value="delete">Delete<br>
