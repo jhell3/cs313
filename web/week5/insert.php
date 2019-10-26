@@ -78,7 +78,7 @@
         if($inject == delete){
             try
             {
-                $query = 'DELETE FROM stats WHERE id = $pokedex';
+                $query = "DELETE FROM stats WHERE id = $pokedex";
                 $statement = $db->prepare($query);
                 $statement->execute();
             }
