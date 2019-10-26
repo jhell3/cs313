@@ -71,8 +71,7 @@
                 echo "Error with DB. Details 3: $ex";
                 die();
             }
-            header("Location: addpokemon.php");
-            die();
+
         }
         
         if($inject == delete){
@@ -90,6 +89,8 @@
             
         }
 
+        header("Location: addpokemon.php");
+        die();
     ?>
 
     </body>
