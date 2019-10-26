@@ -22,13 +22,23 @@
     </form>
     <form action="insert.php" method="POST">
         <div class="form-row">
+            <label for="inject">Injection type</label>
+            <input type="radio" name="inject" value="add">Add<br>
+            <input type="radio" name="inject" value="delete">Delete<br>
+            <input type="radio" name="inject" value="update">Update<br>
+            If delete, just use pokedex number. 
+        </div>
+
+        <div class="form-row">
             <div class="col-md-4 mb-3">
+            <label for="pokedex">Pokedex</label> 
+                <input type="number" class="form-control" name="pokedex">
                 <label for="name">Pokemon Name</label>
-                <input type="text" class="form-control" name="name" required>
+                <input type="text" class="form-control" name="name">
             </div>
             <div class="col-md-4 mb-3">
                 <label for="type">Type</label>
-                <input type="text" class="form-control" name="type"  required>
+                <input type="text" class="form-control" name="type">
             </div>  
             
             <div class="form-row">
@@ -61,11 +71,11 @@
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="evo_num">Evolution Number</label>
-                    <input type="number" class="form-control" name="evo_num" step="0.1"required>
+                    <input type="number" class="form-control" name="evo_num" step="0.1">
               </div>
               <div class="col-md-4 mb-3">
                     <label for="evo_at">Evolve At</label>
-                    <input type="text" class="form-control" name="evo_at" required>
+                    <input type="text" class="form-control" name="evo_at">
               </div>
             </div>  
         </div>
